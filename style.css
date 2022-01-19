@@ -87,7 +87,7 @@ ul input:focus {
 .icon-error {
     position: absolute;
     left: calc(100% - 5.5em);
-    top: calc(100% - 3em);
+    top: calc(100% - 3.6em);
     display: none;
 }
 

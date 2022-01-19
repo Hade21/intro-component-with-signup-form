@@ -21,9 +21,11 @@ function validasiEmail(event) {
         return true;
     } else if (event.value == '') {
         event.nextElementSibling.nextElementSibling.innerHTML = 'Please provide an email';
+        event.nextElementSibling.style.display = 'block';
         return false;
     } else {
         event.nextElementSibling.nextElementSibling.innerHTML = 'Looks like this is not an email';
+        event.nextElementSibling.style.display = 'block';
         return false;
     }
 }
@@ -31,6 +33,7 @@ function validasiEmail(event) {
 function validasiNama(event) {
     if (event.value == '') {
         event.nextElementSibling.nextElementSibling.innerHTML = event.placeholder + ' cannot be empty';
+        event.nextElementSibling.style.display = 'block';
         return false;
     } else {
         return true;
@@ -38,14 +41,16 @@ function validasiNama(event) {
 }
 
 function validasiPassword(event) {
-    let passCheck = /^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$/
-    if (event.value == passCheck) {
+    let passCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$!%*?-_&])[A-Za-z\d@$#-_!%*?&]{8,}$/
+    if (event.value.match(passCheck)) {
         return true;
     } else if (event.value == '') {
         console.log(event.value)
         event.nextElementSibling.nextElementSibling.innerHTML = pass.placeholder + ' cannot be empty';
+        event.nextElementSibling.style.display = 'block';
         return false;
     } else {
         event.nextElementSibling.nextElementSibling.innerHTML = pass.placeholder + ' is not correct';
+        event.nextElementSibling.style.display = 'block';
     }
 }
