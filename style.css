@@ -1,0 +1,161 @@
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: url('./images/bg-intro-desktop.png');
+            background-color: hsl(0, 100%, 74%);
+            color: #FFFFFF;
+        }
+        
+        .container {
+            margin: 50px 100px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-row: 20% 80%;
+        }
+        
+        .title {
+            grid-area: 1/1/3/2;
+            align-self: center;
+            padding-right: 3em;
+            justify-self: right;
+        }
+        
+        .title>h1 {
+            font-size: 48px;
+            line-height: 52px;
+        }
+        
+        .title>p {
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            grid-area: 1/2/2/3;
+            margin-bottom: 20px;
+        }
+        
+        .card>p {
+            width: 100%;
+            padding: 16px 0;
+            text-align: center;
+            background-color: hsl(248, 32%, 49%);
+            border-radius: 10px;
+            box-shadow: 0 8px rgba(90, 80, 90, .3)
+        }
+        
+        .form-wrapper {
+            grid-area: 2/2/3/3;
+        }
+        
+        form {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            box-shadow: 0 8px rgba(90, 80, 90, .3);
+        }
+        
+        ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        li {
+            position: relative;
+        }
+        
+        ul input {
+            padding: 16px 24px;
+            width: calc(100% - 10em);
+            border-radius: 5px;
+            border: 1px solid rgb(194, 194, 194);
+            margin: 10px auto;
+            font-weight: 600;
+        }
+        
+        ul input:focus {
+            outline: none;
+            border: 2px solid rgb(92, 92, 92);
+        }
+        
+        .icon-error {
+            position: absolute;
+            left: calc(100% - 5.5em);
+            top: calc(100% - 3em);
+            display: none;
+        }
+        
+        button {
+            margin-top: 10px;
+            padding: 16px 24px;
+            width: calc(100% - 6.5em);
+            border: none;
+            border-radius: 5px;
+            background-color: hsl(154, 59%, 51%);
+            box-shadow: 0 4px hsl(154, 67%, 36%);
+            color: #FFFFFF;
+        }
+        
+        .term {
+            color: rgb(194, 194, 194);
+            font-size: 11px;
+            margin-top: 20px;
+        }
+        
+        .term b {
+            color: hsl(0, 100%, 74%);
+        }
+        
+        @media (max-width: 450px) {
+            body {
+                background: url(./images/bg-intro-mobile.png);
+                background-color: hsl(0, 100%, 74%);
+            }
+            .container {
+                display: block;
+                margin: 50px 20px;
+                text-align: center;
+            }
+            .title {
+                margin: 0;
+                padding: 0;
+            }
+            .title>h1 {
+                font-size: 24px;
+                line-height: 36px;
+            }
+            .title>p {
+                margin-top: 20px;
+                margin-bottom: 60px;
+                line-height: 28px;
+                padding: 0 16px;
+            }
+            .card>p {
+                padding: 16px 48px;
+                line-height: 28px;
+                width: fit-content;
+            }
+            form {
+                padding: 16px;
+            }
+            ul input {
+                width: calc(100% - 5em);
+                margin: 6px auto;
+            }
+            button {
+                width: calc(100% - 1.3em);
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            .term {
+                padding-left: 30px;
+                padding-right: 30px;
+                line-height: 32px;
+                margin-bottom: 20px;
+            }
+        }
