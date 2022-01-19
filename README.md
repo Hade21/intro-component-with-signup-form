@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repo](https://github.com/hade21/intro-component-with-signup-form-master.git)
-- Live Site URL: [Github page](https://hade21.github.io/intro-component-with-signup-form-master.git)
+- Solution URL: [Github repo](https://github.com/hade21/intro-component-with-signup-form.git)
+- Live Site URL: [Github page](https://hade21.github.io/intro-component-with-signup-form.git)
 
 ## My process
 
